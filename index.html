@@ -509,6 +509,591 @@
       </div>
     </section>
 
+<!-- =========================================
+     MEET STU BARNES - PREMIUM BROKER SECTION
+     Image: stubarnes2.jfif
+     ========================================= -->
+
+<style>
+.stu-team-section {
+  --stu-navy: #101D2C;
+  --stu-gold: #C8A96B;
+  --stu-olive: #847448;
+  --stu-brown: #493A2A;
+  --stu-cream: #F0EBDD;
+  --stu-white: #FFFFFF;
+  padding: 110px 24px;
+  background: #FAF9F6;
+  font-family: 'DM Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.stu-team-section * {
+  box-sizing: border-box;
+}
+
+.stu-team-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.stu-team-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.stu-team-eyebrow {
+  color: #9B7941;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.stu-team-heading h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.18;
+  color: var(--stu-navy);
+  font-weight: 500;
+  margin: 18px 0;
+}
+
+.stu-team-heading h2 em {
+  color: #AC8951;
+  font-weight: 400;
+}
+
+.stu-team-heading p {
+  color: #727780;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+/* Main broker feature */
+.stu-team-feature {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  align-items: center;
+  gap: 55px;
+  padding: 48px 60px;
+  background: var(--stu-cream);
+  position: relative;
+  border-top: 5px solid var(--stu-olive);
+}
+
+.stu-team-feature::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 130px;
+  height: 130px;
+  border-right: 1px solid rgba(132,116,72,.35);
+  border-bottom: 1px solid rgba(132,116,72,.35);
+  pointer-events: none;
+}
+
+.stu-team-portrait {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1/1;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  padding: 11px;
+  border: 8px solid var(--stu-olive);
+  background: white;
+  box-shadow: 0 15px 35px rgba(0,0,0,.16);
+}
+
+.stu-team-portrait img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.stu-team-broker-info .label {
+  display: block;
+  color: var(--stu-olive);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.stu-team-broker-info h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(34px,4vw,52px);
+  color: var(--stu-brown);
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.stu-team-broker-role {
+  color: #786746;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.stu-team-broker-info p {
+  color: #5F5A50;
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 620px;
+  margin-bottom: 26px;
+}
+
+.stu-team-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.stu-team-credentials span {
+  background: rgba(132,116,72,.12);
+  border: 1px solid rgba(132,116,72,.2);
+  color: var(--stu-brown);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.stu-team-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: var(--stu-navy);
+  color: white;
+  padding: 16px 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 800;
+  transition: transform .3s, background .3s;
+}
+
+.stu-team-btn:hover {
+  background: #263E53;
+  transform: translateY(-3px);
+}
+
+/* Roles */
+.stu-team-roles-area {
+  padding: 60px 45px 55px;
+  background: white;
+  border: 1px solid #EAE5D9;
+  border-top: 0;
+}
+
+.stu-team-roles-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.stu-team-roles-heading h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  color: var(--stu-brown);
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.stu-team-roles-heading p {
+  font-size: 13px;
+  color: #77746D;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.stu-team-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 25px;
+}
+
+.stu-team-role {
+  text-align: center;
+  padding: 8px;
+  transition: transform .3s;
+}
+
+.stu-team-role:hover {
+  transform: translateY(-7px);
+}
+
+.stu-team-role-photo {
+  width: min(100%,160px);
+  aspect-ratio: 1/1;
+  margin: 0 auto 22px;
+  padding: 6px;
+  border: 4px solid var(--stu-olive);
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+}
+
+.stu-team-role-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.stu-team-role h4 {
+  color: var(--stu-brown);
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0 0 7px;
+}
+
+.stu-team-role span {
+  display: block;
+  color: #857448;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.stu-team-role p {
+  color: #767676;
+  font-size: 12px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Bottom statement */
+.stu-team-bottom {
+  background: var(--stu-navy);
+  padding: 32px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.stu-team-bottom-text strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #E2C48F;
+}
+
+.stu-team-bottom-text p {
+  color: #E2E6E9;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+}
+
+.stu-team-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stu-team-contact a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 20px;
+  border: 1px solid var(--stu-gold);
+  color: #F1DEBA;
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all .3s;
+  white-space: nowrap;
+}
+
+.stu-team-contact a:hover {
+  background: var(--stu-gold);
+  color: var(--stu-navy);
+}
+
+@media(max-width:1000px) {
+  .stu-team-feature {
+    grid-template-columns: 280px 1fr;
+    gap: 35px;
+    padding: 35px;
+  }
+
+  .stu-team-roles-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .stu-team-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media(max-width:650px) {
+  .stu-team-section {
+    padding: 75px 18px;
+  }
+
+  .stu-team-heading {
+    margin-bottom: 35px;
+  }
+
+  .stu-team-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 22px;
+    text-align: center;
+  }
+
+  .stu-team-portrait {
+    width: 230px;
+    height: 230px;
+  }
+
+  .stu-team-broker-info h3 {
+    font-size: 38px;
+  }
+
+  .stu-team-credentials {
+    justify-content: center;
+  }
+
+  .stu-team-roles-area {
+    padding: 42px 18px;
+  }
+
+  .stu-team-roles-heading h3 {
+    font-size: 27px;
+  }
+
+  .stu-team-roles-grid {
+    gap: 18px 10px;
+  }
+
+  .stu-team-role-photo {
+    max-width: 125px;
+    margin-bottom: 15px;
+  }
+
+  .stu-team-role h4 {
+    font-size: 12px;
+  }
+
+  .stu-team-role span {
+    font-size: 11px;
+  }
+
+  .stu-team-role p {
+    font-size: 11px;
+  }
+
+  .stu-team-bottom {
+    padding: 30px 22px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .stu-team-contact {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .stu-team-contact a {
+    width: 100%;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .stu-team-role,
+  .stu-team-btn,
+  .stu-team-contact a {
+    transition: none;
+  }
+}
+</style>
+
+<section class="stu-team-section" id="meet-stu">
+  <div class="stu-team-container">
+
+    <div class="stu-team-heading">
+      <span class="stu-team-eyebrow">
+        The Person Behind the Business
+      </span>
+
+      <h2>
+        Meet Stu Barnes.
+        <em>Experience You Can Trust.</em>
+      </h2>
+
+      <p>
+        One dedicated real estate professional.
+        Personal attention and experienced guidance
+        throughout your real estate journey.
+      </p>
+    </div>
+
+    <!-- MAIN FEATURE -->
+    <div class="stu-team-feature">
+
+      <div class="stu-team-portrait">
+        <img
+          src="stubarnes2.jfif"
+          alt="Stu Barnes, Carolina Flat Fee Realty"
+          loading="lazy">
+      </div>
+
+      <div class="stu-team-broker-info">
+
+        <span class="label">
+          Your North Carolina Real Estate Professional
+        </span>
+
+        <h3>STU BARNES</h3>
+
+        <div class="stu-team-broker-role">
+          Broker / Owner
+        </div>
+
+        <p>
+          With over 20 years of real estate experience,
+          Stu Barnes believes in providing homeowners
+          and buyers with professional service,
+          clear communication, and personal attention.
+        </p>
+
+        <p>
+          From helping sellers understand their flat fee
+          options to guiding buyers through the purchase
+          process, Stu offers a personalized approach
+          to one of life's most important decisions.
+        </p>
+
+        <div class="stu-team-credentials">
+          <span>20+ Years Experience</span>
+          <span>REALTOR®</span>
+          <span>GRI</span>
+          <span>ABR</span>
+        </div>
+
+        <a href="#contact" class="stu-team-btn">
+          Work With Stu Barnes
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ROLES SECTION -->
+    <div class="stu-team-roles-area">
+
+      <div class="stu-team-roles-heading">
+        <h3>One Familiar Face. Multiple Ways to Help.</h3>
+        <p>
+          From listing your home to navigating closing,
+          experience a personalized approach
+          throughout the real estate process.
+        </p>
+      </div>
+
+      <div class="stu-team-roles-grid">
+
+        <article class="stu-team-role">
+          <div class="stu-team-role-photo">
+            <img src="stubarnes2.jfif"
+                 alt="Stu Barnes - Listing Services"
+                 loading="lazy">
+          </div>
+          <h4>STU BARNES</h4>
+          <span>Home Listing Services</span>
+          <p>
+            Personalized support when
+            preparing and listing your home.
+          </p>
+        </article>
+
+        <article class="stu-team-role">
+          <div class="stu-team-role-photo">
+            <img src="stubarnes2.jfif"
+                 alt="Stu Barnes - Buyer Representation"
+                 loading="lazy">
+          </div>
+          <h4>STU BARNES</h4>
+          <span>Buyer Representation</span>
+          <p>
+            Helping buyers make informed
+            property decisions.
+          </p>
+        </article>
+
+        <article class="stu-team-role">
+          <div class="stu-team-role-photo">
+            <img src="stubarnes2.jfif"
+                 alt="Stu Barnes - Real Estate Marketing"
+                 loading="lazy">
+          </div>
+          <h4>STU BARNES</h4>
+          <span>Property Marketing</span>
+          <p>
+            Guidance through the marketing
+            and selling process.
+          </p>
+        </article>
+
+        <article class="stu-team-role">
+          <div class="stu-team-role-photo">
+            <img src="stubarnes2.jfif"
+                 alt="Stu Barnes - Transaction Guidance"
+                 loading="lazy">
+          </div>
+          <h4>STU BARNES</h4>
+          <span>Transaction Guidance</span>
+          <p>
+            Personal support throughout
+            the process toward closing.
+          </p>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- FINAL MESSAGE -->
+    <div class="stu-team-bottom">
+
+      <div class="stu-team-bottom-text">
+        <strong>Personal Service. From Start to Finish.</strong>
+        <p>
+          Your transaction deserves personal attention.
+          Start a conversation with Stu Barnes today.
+        </p>
+      </div>
+
+      <div class="stu-team-contact">
+        <a href="tel:+19198193956">
+          Call (919) 819-3956
+        </a>
+
+        <a href="mailto:stu@CarolinaFlatFeeRealty.com">
+          Send an Email ↗
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- END MEET STU BARNES SECTION -->
+
     <!-- Services -->
     <section class="section services" id="services">
       <div class="container">
